@@ -1,0 +1,42 @@
+{
+  "name": "drift",
+  "version": "0.1.0",
+  "description": "encrypted proximity exchange over bluetooth. MLS (RFC 9420) for nearby devices.",
+  "type": "module",
+  "main": "src/mls-session.mjs",
+  "scripts": {
+    "test": "node test/mls-dm.test.mjs"
+  },
+  "keywords": [
+    "mls",
+    "rfc-9420",
+    "bluetooth",
+    "ble",
+    "encryption",
+    "xmtp",
+    "streetpass",
+    "proximity",
+    "e2e",
+    "ed25519",
+    "chacha20-poly1305",
+    "x25519"
+  ],
+  "author": "sleepycompile",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sleepycompile/drift"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@abandonware/bleno": "^0.6.2",
+    "@abandonware/noble": "^1.9.2-26",
+    "@hpke/chacha20poly1305": "^1.6.1",
+    "@hpke/core": "^1.6.1",
+    "better-sqlite3": "^11.9.1",
+    "msgpack-lite": "^0.1.26",
+    "ts-mls": "^1.6.2"
+  }
+}
